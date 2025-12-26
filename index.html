@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tra cứu đơn hàng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #f0f7f8;
+      font-family: Arial, sans-serif;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+
+    .loading {
+      position: fixed;
+      inset: 0;
+      background: #f0f7f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #555;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loading" id="loading">
+    🔍 Đang tải trang tra cứu...
+  </div>
+
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbyhsB3YIKLe8lERmTF_8CkHsibjOOz1zvsPGINRCiyYGTnBX_XVkWKWtxs7uqGRCO6f/exec"
+    onload="document.getElementById('loading').style.display='none'">
+  </iframe>
+
+</body>
+</html>
